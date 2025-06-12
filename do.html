@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="do.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-do List <img src="assets/todo.png" height="25px" width="30px"/> </h2>
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Add a new task...">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="controls">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <button id="clear-all" onclick="clearAllTasks()">Clear All</button>
+        </div>
+
+        <ul id="list-container">
+            <!-- List items will be added here dynamically -->
+             <!-- <li class="checked">Task 1</li>
+             <li>Task 1</li>
+             <li>Task 1</li> -->
+
+        </ul>
+
+    
+         </div>
+    </div>
+    <script src="do.js"></script>
+</body>
+</html>

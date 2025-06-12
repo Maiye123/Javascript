@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.att{
+    background-color: darkred;
+    color: whitesmoke;
+}
+
+.header{
+    background-color: teal;
+    color: white;
+    width: 40%;
+}
